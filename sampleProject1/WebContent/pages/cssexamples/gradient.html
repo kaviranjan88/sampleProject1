@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Gradient Example</title>
+<style type="text/css">
+	.default-div {
+		width: 200px;
+		height: 20px;
+	}
+	#linear-gradient #default {
+		background: linear-gradient(red, blue);
+	}
+	
+	#linear-gradient #diagonal {
+		background: linear-gradient(to right, red, blue);
+	}
+	
+	#linear-gradient #using-angle {
+		background: linear-gradient(270deg, red, blue);
+	}
+	
+	#linear-gradient #using-multi-color {
+		background: linear-gradient(red, blue, green, yellow);	
+	}
+</style>
+</head>
+<body>
+	<h2>Linear Gradient</h2>
+	<div id="linear-gradient">
+		<header><h3>Default</h3></header>
+		<div class="default-div" id="default"></div>
+		
+		<header><h3>Diagonal</h3></header>
+		<div class="default-div" id="diagonal"></div>
+		
+		<header><h3>Using Angle</h3></header>
+		<div class="default-div" id="using-angle"></div>
+		
+		<header><h3>Using Multicolor</h3></header>
+		<div class="default-div" id="using-multi-color"></div>
+		
+	</div>
+	
+	
+	<h2>Radial Gradient</h2>
+</body>
+</html>

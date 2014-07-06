@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Transition Example</title>
+<style type="text/css">
+	#foo a {
+		padding: 10px 20px;
+		margin: 20px;
+		background-color: #A0A;
+		-moz-transition: background 0.3s ease 0.5s; 
+	}
+	
+	#foo a:HOVER {
+		background-color: #AA0;
+	}
+	
+	#foo-all a {
+		padding: 10px 20px;
+		margin: 20px 20px;
+		background-color: #A0A;
+		-moz-transition: all 0.3s ease 0.5s; 
+	}
+	
+	#foo-all a:HOVER {
+		background-color: #AA0;
+		color: black;
+	}
+</style>
+</head>
+<body>
+	<header></header>
+	<content>
+		<span id="foo">
+			<a href="#">Transition me</a>
+		</span>
+		
+		<span id="foo-all">
+			<a href="#">Transition me</a>
+		</span>
+	</content>
+	<footer></footer>
+</body>
+</html>

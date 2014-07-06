@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Transformation Example</title>
+<style>
+	div ul {
+		text-align: center;
+		background:rgba(128, 128, 128, 0.1);
+	}
+	
+	div ul li {
+		display: inline;
+		list-style: none;
+		padding: 5px 10px;
+	}
+	
+	#scale-transformation ul li img, #rotate-transformation ul li img,
+	#skew-transformation ul li img {
+		-moz-transition: -moz-transform 0.2s ease-in-out;
+		transition: transform 0.2s ease-in-out;
+	}
+	
+	#scale-transformation ul li img:HOVER {
+		//opacity: 0.4;
+		-moz-transform-origin: bottom left;
+		-o-transform-origin: bottom left;
+		transform-origin: bottom left;
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform : scale(1.5);
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	}
+	
+	#rotate-transformation ul li img:HOVER {
+		-moz-transform: scale(1.5) rotate(45deg);
+		-o-transform: scale(1.5) rotate(45deg);
+		transform : scale(1.5) rotate(45deg); 
+	}
+	
+	#skew-transformation ul li img:HOVER {
+		-moz-transform: scale(1.5) skew(-15deg, 40deg);
+		-o-transform: scale(1.5) skew(-15deg, 40deg);
+		transform : scale(1.5) skew(-15deg, 40deg);
+	}
+</style>
+</head>
+<body>
+	<header><h2>Scale transformation</h2></header>
+	<div id="scale-transformation">
+		<ul>
+			<li><img src="images/image-1.png" height="80" width="130"></li>
+			<li><img src="images/image-2.png" height="80" width="130"></li>
+			<li><img src="images/image-3.png" height="80" width="130"></li>
+		</ul>
+	</div>
+	
+	<header><h2>Rotate transformation</h2></header>
+	<div id="rotate-transformation">
+		<ul>
+			<li><img src="images/image-1.png" height="80" width="130"></li>
+			<li><img src="images/image-2.png" height="80" width="130"></li>
+			<li><img src="images/image-3.png" height="80" width="130"></li>
+		</ul>
+	</div>
+	
+	<header><h2>Skew transformation</h2></header>
+	<div id="skew-transformation">
+		<ul>
+			<li><img src="images/image-1.png" height="80" width="130"></li>
+			<li><img src="images/image-2.png" height="80" width="130"></li>
+			<li><img src="images/image-3.png" height="80" width="130"></li>
+		</ul>
+	</div>
+</body>
+</html>
